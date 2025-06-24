@@ -1,0 +1,188 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fc;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: #f8f9fc;
+  border-bottom: 1px solid #e3e6f0;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 0.5rem !important;
+  border-top-right-radius: 0.5rem !important;
+}
+
+.card-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4e73df;
+  margin: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.form-card {
+  height: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #5a5c69;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control {
+  border-radius: 0.35rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d3e2;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #bac8f3;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.35rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
+}
+
+.result-alert {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fc;
+  border-left: 4px solid #4e73df;
+  border-radius: 0.35rem;
+}
+
+.result-alert h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5a5c69;
+  margin-bottom: 0.5rem;
+}
+
+.risk-level {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.risk-level.low {
+  color: #1cc88a;
+}
+
+.risk-level.medium {
+  color: #f6c23e;
+}
+
+.risk-level.high {
+  color: #e74a3b;
+}
+
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.custom-tooltip .label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #5a5c69;
+}
+
+.recharts-default-tooltip {
+  border-radius: 0.35rem !important;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+.recharts-tooltip-item {
+  color: #5a5c69 !important;
+}
+
+.recharts-legend-item-text {
+  color: #5a5c69 !important;
+}
+
+.app-footer {
+  background-color: #4e73df;
+  color: white;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-header p {
+    font-size: 1rem;
+  }
+
+  .card-header h2 {
+    font-size: 1.1rem;
+  }
+}
